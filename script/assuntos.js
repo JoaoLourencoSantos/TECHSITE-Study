@@ -42,7 +42,7 @@ function inicializaDB(){
 }
 
 function showPosts(){    
-    let database, set, categorias, curtida;    
+    let database, set, categorias, curtida, comentario;    
     database = inicializaDB();
     categorias = ['Cultura','Esportes','Musica','Tecnologia']; 
     set = ``; 
@@ -51,6 +51,11 @@ function showPosts(){
 
     for(let i = 0; i < database.assuntos.length; i++){
         coments =  (database.comentarios).filter(data => data.idAssunto == i);
+        if(coments.length > 0){
+            comentario = 'assets/chat.png';
+        }else{            
+            comentario = 'assets/chatW.png';
+        }
         if(database.assuntos[i].curtidas == 0){
             curtida = 'assets/heartW.png';
         }else{
@@ -67,7 +72,7 @@ function showPosts(){
                 <h5>${categorias[database.assuntos[i].categoria]}</h5>
             </div>
             <div><img class="like" id="${i}" src="${curtida}" alt=""> </div>
-            <div><img src="assets/chatW.png" alt=""> <h5>${coments.length}</h5></div>
+            <div><img src="${comentario}" alt=""> <h5>${coments.length}</h5></div>
             <a href="post.html?id=${i}">
                 Ver mais
             </a>

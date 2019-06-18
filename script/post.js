@@ -14,7 +14,7 @@ function inicializaDB() {
 }
 
 function showPost(id) {
-    let database, coments, curtida;
+    let database, coments, curtida,comentario;
     database =  inicializaDB();
     coments =  (database.comentarios).filter(data => data.idAssunto == id);
 
@@ -23,13 +23,18 @@ function showPost(id) {
     }else{
         curtida = 'assets/heart.png';
     }
+    if(coments.length > 0){
+        comentario = 'assets/chat.png';
+    }else{            
+        comentario = 'assets/chatW.png';
+    }
 
     let set =
         `
         <header>
             <h3>${database.assuntos[id].titulo}</h3>
             <div><img src="${curtida}" alt=""> </div>
-            <div><img src="assets/chat.png" alt=""> <h5>${coments.length}</h5></div>
+            <div><img src="${comentario}" alt=""> <h5>${coments.length}</h5></div>
         </header>
         <img src="assets/fundo3.jpg" alt="">
         <p id="conteudo">${database.assuntos[id].conteudo} </p>

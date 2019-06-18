@@ -1,0 +1,91 @@
+/*=====================Corpo=====================*/
+main{
+    width: 100%;
+    height: 100%;
+}
+main>article.lista-assuntos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/fundo4.jpg) fixed 100% no-repeat;    
+    padding: 0;
+    margin: 0;
+}
+
+main>article.lista-assuntos>section#assuntos{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 94%;   
+    justify-content: center;
+    align-items: center;
+}
+main>article.lista-assuntos>section#assuntos>header{
+    background: none;
+    width: 100%;
+    height: 10%;   
+    text-align: center;
+    font-size: 1.5;
+    font-weight: bold;
+}
+
+
+
+
+main>article.lista-assuntos>aside#comentarios>header{
+    background: none;
+    width: 100%;
+    height: 10%;   
+    text-align: center;
+    font-size: 1.5;
+    font-weight: bold;
+}
+main>article.lista-assuntos>section#assuntos>main>{
+    text-decoration: none;
+    font-size: 3em ; 
+    width: 90%;
+    height: 100%; 
+    color: white;   
+
+}
+main>article.lista-assuntos>section#assuntos>main>article.box-post{
+    background: rgba(226, 86, 22, 0.904);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 96%;
+    height: 10%;   
+    margin: 2% auto;
+}
+main>article.lista-assuntos>section#assuntos>main>article.box-post>div h5{
+    font-size: .15em ; 
+}
+
+
+main>article.lista-assuntos>section#assuntos>main>article.box-post>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    height: 80%;   
+}
+
+main>article.lista-assuntos>section#assuntos>main>article.box-post>div:nth-child(1){
+    width: 50%;  
+}
+main>article.lista-assuntos>section#assuntos>main>article.box-post>div:nth-child(2){
+    width: 30%;  
+}
+main>article.lista-assuntos>section#assuntos>main>article.box-post>a{
+    display: block;
+    text-align: center;
+    width: 16%;  
+    text-decoration: none;
+    color: white;
+    font-size: .16em;
+    font-weight: bold;
+}

@@ -1,0 +1,102 @@
+main{
+    color:black;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+main>div{
+    margin: 0 auto;  
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+main>div>section#post{
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+main>div>section#post>header{
+    width: 96%;
+    height: 9.5%;
+    color:white;  
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    font-size: 1em;    
+    background: rgba(226, 86, 22, 0.904);
+}
+main>div>section#post>header>h3{
+    width: 76%;
+    color:white;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    font-size: 2em;    
+}
+main>div>section#post>header>div{
+    width: 10%;
+    height: 100%;
+    color:white;  
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    font-size: 1.5em;    
+}
+
+main>div>section#post>img{
+    width: 96%;
+    height: 40%; 
+    margin: 2% auto;       
+}
+main>div>section#post>p{
+    width: 90%;
+    height: 50%;
+    margin: 5% auto;
+    color: black;
+    font-size: 1.2em;
+}
+
+main>div>section#coments{
+    width: 35%;
+    height: 100%;   
+    margin: 0 auto;
+}       
+main>div>section#coments>header{
+    width: 100%;
+    height: 7%;
+    color:white; 
+    font-weight: bold; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    font-size: 2em;
+    background: rgba(226, 86, 22, 0.904);
+}       
+main>div>section#coments>div{
+    width: 90%;
+    padding: 5%;
+    border: 2px solid rgba(20,20,20,.5);
+    background:rgba(192, 103, 61, 0.904);
+    margin: 3.5% auto;
+}        
+main>div>section#coments>div>p{
+    margin: 0 auto;
+}       
+main>div>section#coments>div>h3{
+    font-size: 1em;
+    font-weight: bold;
+}       

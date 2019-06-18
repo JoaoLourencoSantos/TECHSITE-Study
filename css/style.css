@@ -4,6 +4,10 @@ body{
     width: 100vw;
     height: 100vh;
 }
+html{
+    width: 100vw;
+    height: 100vh;
+}
 /*=====================Cabeçalho=====================*/
 div#cabecalho{
     width: 100%;
@@ -74,7 +78,6 @@ main>article:nth-child(2){
 }
 main>article>section{
     display: flex;
-    background: green;
     width: 86%;
     height: 70%;
     margin:0 auto;
@@ -151,6 +154,28 @@ main>article>section>div#destaque>main>div{
     font-size:.6em;
 }
 
+main>article>section>div#destaque>main>div>h3{
+    text-align: center;
+    width: 80%;
+    margin: 4%  auto;
+    font-size:1em;
+}
+main>article>section>div#destaque>main>div>span{
+    display:block;
+    width: 90%;
+    height: 70%;
+    margin: 0  auto;
+    font-size:.7em;
+    text-align: justify;
+
+}
+main>article>section>div#destaque>main>div>h5{
+    display:block;
+    width: 80%;
+    height: 70%;
+    margin: 1% auto;
+    font-size:.5em;
+}
 
 
 /*=====================Form=====================*/
@@ -167,7 +192,7 @@ main>article>section>div#destaque-form>main>form>input{
     width: 95%;
     height: 10%;
     padding-left:2%;
-    margin:0 auto;
+    margin:2% auto;
     border-radius: 0px 0px 10px 0px;
     box-shadow: 2px 2px 2px rgba(250,250,250,.6);
 }
@@ -175,7 +200,7 @@ main>article>section>div#destaque-form>main>form>textarea{
     width: 90%;
     height: 45%;
     padding: 5%;
-    margin:10% auto;
+    margin:4% auto;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px rgba(250,250,250,.6);
 

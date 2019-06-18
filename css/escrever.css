@@ -1,0 +1,36 @@
+/*=====================Corpo=====================*/
+main{
+    width: 100%;
+    height: 100%;
+}
+main>article{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;   
+    justify-content: center;
+    align-items: center;
+}
+
+main>article.lista-assuntos{
+    background: url(../assets/fundo5.jpg) fixed 100% no-repeat;
+}
+
+main>article.lista-assuntos>section{
+    width: 40%;
+    height: 60%; 
+}
+
+main>article.lista-assuntos>section>div#destaque-form{
+    width: 100%;
+    height: 100%; 
+}
+
+main>article.lista-assuntos>section>div#destaque-form>main>form>select{
+    width: 99%;
+    height: 10%;
+    margin-top:2%;
+    border-radius: 0px 0px 10px 0px;
+    box-shadow: 2px 2px 2px rgba(250,250,250,.6);
+}
+

@@ -144,12 +144,12 @@ main>article>section>div#destaque>main{
 }
 main>article>section>div#destaque>main>img{
     display:block;
-    width: 35%;
+    width: 25%;
     height: 50%;
     margin:5% auto;
 }
 main>article>section>div#destaque>main>div{
-    width: 40%;
+    width: 60%;
     height: 100%;
     font-size:.6em;
 }
@@ -162,10 +162,10 @@ main>article>section>div#destaque>main>div>h3{
 }
 main>article>section>div#destaque>main>div>span{
     display:block;
-    width: 90%;
+    width: 94%;
     height: 70%;
     margin: 0  auto;
-    font-size:.7em;
+    font-size:.6em;
     text-align: justify;
 
 }
@@ -173,7 +173,7 @@ main>article>section>div#destaque>main>div>h5{
     display:block;
     width: 80%;
     height: 70%;
-    margin: 1% auto;
+    margin: 6% auto;
     font-size:.5em;
 }
 

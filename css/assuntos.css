@@ -75,7 +75,7 @@ main>article.lista-assuntos>section#assuntos>main>article.box-post>div{
 }
 
 main>article.lista-assuntos>section#assuntos>main>article.box-post>div:nth-child(1){
-    width: 50%;  
+    width: 45%;  
 }
 main>article.lista-assuntos>section#assuntos>main>article.box-post>div:nth-child(2){
     width: 30%;  
@@ -88,4 +88,7 @@ main>article.lista-assuntos>section#assuntos>main>article.box-post>a{
     color: white;
     font-size: .16em;
     font-weight: bold;
+}
+main>article.lista-assuntos>section#assuntos>main>article.box-post>a:hover{
+    color: black;
 }

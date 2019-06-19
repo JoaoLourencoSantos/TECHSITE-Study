@@ -4,6 +4,7 @@ document.querySelector("#btn-salvar").addEventListener('click',function(){
     setarDados(document.querySelector(".index-form"));
 });
 
+
 function inicializaDB(){
     let dataBase = localStorage.getItem("DataBase");
     if(!dataBase)

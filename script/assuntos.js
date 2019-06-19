@@ -19,7 +19,6 @@ $(document).on('click','.like',function(){ // metodo para fazer o mesmo clique e
         conteudo  : database.assuntos[id].conteudo,
         curtidas  : curtida    
     }
-    console.log(dados);
 
     if(dados)
     {
@@ -42,15 +41,20 @@ function inicializaDB(){
 }
 
 function showPosts(){    
-    let database, set, categorias, curtida;    
+    let database, set, categorias, curtida, comentario;    
     database = inicializaDB();
-    categorias = ['Cultura','Esportes','Musica','Tecnologia']; 
+    categorias = ['Desenvolvimento','Metodologia','Linguagem','Hardware']; 
     set = ``; 
 
     
 
-    for(let i = 0; i < database.assuntos.length; i++){
+    for(let i = database.assuntos.length - 1; i >= 0 ; i--){
         coments =  (database.comentarios).filter(data => data.idAssunto == i);
+        if(coments.length > 0){
+            comentario = 'assets/chat.png';
+        }else{            
+            comentario = 'assets/chatW.png';
+        }
         if(database.assuntos[i].curtidas == 0){
             curtida = 'assets/heartW.png';
         }else{
@@ -66,8 +70,11 @@ function showPosts(){
             <div> 
                 <h5>${categorias[database.assuntos[i].categoria]}</h5>
             </div>
+            <div> 
+                <h5>${database.assuntos[i].data}</h5>
+            </div>
             <div><img class="like" id="${i}" src="${curtida}" alt=""> </div>
-            <div><img src="assets/chatW.png" alt=""> <h5>${coments.length}</h5></div>
+            <div><img src="${comentario}" alt=""> <h5>${coments.length}</h5></div>
             <a href="post.html?id=${i}">
                 Ver mais
             </a>
@@ -78,35 +85,3 @@ function showPosts(){
     $('#box-assuntos').append(set); 
 }
 
-function showComments(id){    
-    let database, set, categorias, comments;
-    $('#box-comentarios').html(''); 
-
-    set = ``; 
-    database = inicializaDB();
-    comments = (database.comentarios).filter( data => data.idAssunto == id); 
-    console.log(comments);
-
-    for(let i = 0; i < comments.length; i++){
-        
-        set += 
-        `
-        <article class="box-comentario">
-            <p> 
-                ${comments[i].conteudo}
-                
-            </p>
-            <div> 
-                <h5>${comments[i].nome}</h5>
-                <h5>${comments[i].data}</h5>
-            </div>
-            
-        </article>
-        `;
-    }
-    $('#box-comentarios').append(set); 
-}
-
-function somaCurtida(id){
-    
-}

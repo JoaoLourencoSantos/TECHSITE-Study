@@ -49,7 +49,7 @@ function showPost(id) {
             <div><img src="${curtida}" alt=""> </div>
             <div><img src="${comentario}" alt=""> <h5>${coments.length}</h5></div>
         </header>
-        <img src="assets/fundo3.jpg" alt="">
+        <img src="${database.assuntos[id].imagem}" alt="">
         <p id="conteudo">${database.assuntos[id].conteudo} </p>
     `;
     $('#post').append(set);

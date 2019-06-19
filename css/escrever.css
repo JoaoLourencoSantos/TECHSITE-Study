@@ -27,10 +27,14 @@ main>article.lista-assuntos>section>div#destaque-form{
 }
 
 main>article.lista-assuntos>section>div#destaque-form>main>form>select{
-    width: 99%;
-    height: 10%;
+    width: 100%;
+    height: 15%;
     margin-top:2%;
     border-radius: 0px 0px 10px 0px;
     box-shadow: 2px 2px 2px rgba(250,250,250,.6);
+}
+main>article.lista-assuntos>section>div#destaque-form>main>form>input{
+    width: 99%;
+    height: 15%;
 }
 

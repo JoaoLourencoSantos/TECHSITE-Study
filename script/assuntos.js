@@ -16,6 +16,7 @@ $(document).on('click','.like',function(){ // metodo para fazer o mesmo clique e
         data      : database.assuntos[id].data,
         titulo    : database.assuntos[id].titulo,
         categoria : database.assuntos[id].categoria,
+        imagem    : database.assuntos[id].imagem,
         conteudo  : database.assuntos[id].conteudo,
         curtidas  : curtida    
     }
